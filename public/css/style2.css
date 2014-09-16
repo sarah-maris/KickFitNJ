@@ -529,6 +529,10 @@ PRINT STYLESHEET
 	background:#ECFFBD;
 }
 
+#babysitting{ 
+	background:#FFD2EA;
+}
+
 .pilates {
 	background:#F9F7B4;
 }
@@ -538,18 +542,38 @@ PRINT STYLESHEET
 .cardio{ 
 	background:#FFD2EA;
 }
+.comp{ 
+	background:#E0FFFF;
+}
+
+p.bsit{ 
+	padding-right: 15px;
+	padding-left: 15px;
+}
 
 #legend {
 	/*padding-left:20px ; */
 }
 
 .news-box{
-	/*margin-right:40px ; */
+	height: 340px;
+	margin-top: 5px;
 }
 
+#babysitting h2{ 
+	color:#FF1493;
+}
 
-hr 
-{
+#star {
+	color:#000;
+	text-decoration: none; 
+}
+
+h3 {
+	text-decoration: none; 
+}
+
+hr {
 color: #ECFFBD;
 border: 0; 
 height: 1px; 
