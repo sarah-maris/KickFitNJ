@@ -574,14 +574,19 @@ h3 {
 }
 
 hr {
-color: #ECFFBD;
-border: 0; 
-height: 1px; 
-background: #6C3; 
-background-image: -webkit-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
-background-image: -moz-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
-background-image: -ms-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
-background-image: -o-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
+	color: #ECFFBD;
+	border: 0; 
+	height: 1px; 
+	background: #6C3; 
+	background-image: -webkit-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
+	background-image: -moz-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
+	background-image: -ms-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
+	background-image: -o-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
 
 }
 
+
+#new > p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
