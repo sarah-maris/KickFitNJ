@@ -586,7 +586,7 @@ hr {
 }
 
 
-#new > p {
+#new > p, #babysitting >p {
 	margin-left: 20px;
 	margin-right: 20px;
 }
