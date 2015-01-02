@@ -125,8 +125,9 @@ a:hover {
 
 h1 {
 	font-size: 2em;
-	background-color: #e0ffff;
-	color:#1cc0dc;
+	background-color: #ec4399;
+	color:#FFF;
+	text-align:center;
 }
 
 h2 {
@@ -136,10 +137,10 @@ h2 {
 
 h3 {
 	font-size: 1.1em;
-	color: #666;
 	margin: 1em 0;
 	text-decoration:underline;
-	text-transform:uppercase;	
+	text-transform:uppercase;
+	
 }
 
 h4 {

@@ -7,7 +7,6 @@ primary styles
    Write your own styles here.
 
 
-
 BASE (MOBILE) SIZE
 	These are the mobile styles. It's what people see on their phones.
 	Remember, keep it light: Speed is Important.
@@ -17,22 +16,25 @@ BASE (MOBILE) SIZE
 body{
 	color:#666;
 	font-family:'Ubuntu', Arial, Helvetica, sans-serif;
-	text-align:left;
+	text-align:center;
 	line-height:1.4em;
 	font-weight:normal;
 }
 h1, h2, h3, h4, h5, h6{
-	font-weight:bold;
-	font-family:'Ubuntu', Arial, Helvetica, sans-serif;
-	line-height:100%;
-	margin:10px 0 5px 0;
+	font-weight: bold;
+	font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+	line-height: 100%;
+	margin: 10px 0 5px 0;
 }
 h3{
 	padding-top:20px;
-	color: #333;
+	color: #1cc0dc;
 }
 h4{
-	margin:10px 0 5px 0;
+	margin:20px 0 5px 0;
+}
+h5{
+	text-align:left;
 }
 
 
@@ -43,7 +45,6 @@ a:active,
 a:hover{color:#999;
 	text-decoration:none;
 }
-
 
   
 /* structure */   
@@ -91,37 +92,6 @@ p{ margin:10px 0 10px 0;}
 .icons {
 }
 
-.thumbnail 
-{
-float:left;
-margin-right: 5px;
-padding: 5px 20px 10px 0px;
-width:100px;
-
-}
-
-.thumbnail-v
-{
-float:left;
-margin-right: 5px;
-padding: 5px 20px 10px 0px;
-height:100px;
-
-}
-
-
-hr 
-{
-	color: #ffd2ea;
-	border: 0; 
-	height: 1px; 
-	background: #ec4399; 
-	background-image: -webkit-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
-	background-image: -moz-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
-	background-image: -ms-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
-	background-image: -o-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
-
-}
 
 /* RESPONSIVE IMAGES IN CONTENT AREA. IF YOU WANT IMAGES TO BE RESPONSIVE EVERYWHERE, WRITE ANOTHER CSS RULE */
 #content img{ max-width:100%; height:auto;}
@@ -133,14 +103,14 @@ hr
 	display:block;
 	padding:10px;
 	margin:10px 0 0;
-	background:#ec4399;
+	background:#1cc0dc;
 	color:#fff;
 	cursor:pointer;
 	text-transform:uppercase;
 	font-size:20px;
 }
 .menu-toggle.toggled-on{
-	background:#ec4399;
+	background:#1cc0dc;
 }
 .sf-menu{
 	display:none;
@@ -155,15 +125,15 @@ hr
 	
 }
 .sf-menu li a {
-	background:#EFEFEF;
+	background:#efefef;
 	display:block;
 	margin:1px 0; 
 	padding:10px;
 	text-decoration:none;
 }
 .sf-menu li a:hover{
-	background:#ec4399;
-	color:#FFF;
+	background:#1cc0dc;
+	color:#fff;
 }
 .sf-menu li li a {
 	background:#EFEFEF;
@@ -213,22 +183,15 @@ h1, h2, h3, h4, h5, h6{
 }
 
 footer{ 
-	background:#ec4399;
-	color:#FFF;
+	background:#e0ffff;
+	color:#1cc0dc;
 }
 footer a,
 a:visited,
-a:active{
-	color:#1cc0dc;
+a:active,
+a:hover{color:#1cc0dc;
 	text-decoration:none;
 }
-
-a:hover{
-	color:#e0ffff;
-	text-decoration:none;
-}
-
-
 footer h1, footer h2, footer h3, footer h4{ 
 	color:#CCC; 
 	margin-bottom:10px;
@@ -416,7 +379,7 @@ ul.sf-menu li li li.sfHover ul {
 	height:25px;
 }
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-	color:			#ec4399;	
+	color:			#1cc0dc;	
 }
 .sf-menu li li a {
 		border-top:		1px solid #fff;
@@ -429,13 +392,13 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-	background:#ec4399;
+	background:#1cc0dc;
 	outline:		0;
 	color:#FFF;
 }
 .sf-menu li:hover > a{ 
 	color:#FFF;
-	background:#ec4399;
+	background:#1cc0dc;
 }
 
 
@@ -474,9 +437,20 @@ ul.sf-menu li li li.sfHover ul {
 	float: left;
 	display: block;
 }
-
-
-	
+columns.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	text-align: center;
+}
 .alpha{margin-left:0px;}
 .omega{margin-right:0px;}
 /* @
@@ -544,14 +518,76 @@ PRINT STYLESHEET
 }
 
 
-.h160px {
-	height: 160px;
-	}
-	
-.snow {
-	color: #1CC0DC;
+/* SAM customizations */
+/* 08-16-14*/
+
+.month {
+	color: #1cc0dc;
 }
-	
+
+#babysitting{ 
+	background:#FFD2EA;
+}
+
+.pilates {
+	background:#F9F7B4;
+}
+.weights { 
+	background:#ECFFBD;
+}
+.cardio{ 
+	background:#FFD2EA;
+}
+.comp{ 
+	background:#E0FFFF;
+}
+
+p.bsit{ 
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+#legend {
+	/*padding-left:20px ; */
+}
+
+.news-box{
+	height: 300px;
+	margin-top: 5px;
+	background:#ECFFBD;
+}
+
 .news-header {
 	color: #66cc33;
-}	
+}
+
+#babysitting h2{ 
+	color:#FF1493;
+}
+
+#star {
+	color:#000;
+	text-decoration: none; 
+}
+
+h3 {
+	text-decoration: none; 
+}
+
+hr {
+	color: #ffd2ea;
+	border: 0; 
+	height: 1px; 
+	background: #1cc0dc; 
+	background-image: -webkit-linear-gradient(left, #ffd2ea, #1cc0dc, #ffd2ea); 
+	background-image: -moz-linear-gradient(left, #ffd2ea, #1cc0dc, #ffd2ea); 
+	background-image: -ms-linear-gradient(left, #ffd2ea, #1cc0dc, #ffd2ea); 
+	background-image: -o-linear-gradient(left, #ffd2ea, #1cc0dc, #ffd2ea); 
+
+}
+
+
+#new > p, #babysitting >p {
+	margin-left: 20px;
+	margin-right: 20px;
+}

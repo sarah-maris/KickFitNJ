@@ -53,7 +53,7 @@ header{
 }
 	
 #hero{
-	background:#ECFFBD;
+	background:#e0ffff;
 	border-top:1px solid #e2e2e2;
 	border-bottom:1px solid #e2e2e2;
 	padding:40px 0 40px 0;
@@ -63,12 +63,12 @@ header{
 hgroup h1{ 
 	font-size:2em;
 	margin-top:0px;
-	color:#6C3;
+	color:#1cc0dc;
 	}
 hgroup h2{ 
 	font-size:1.4em;
 	margin-top:0px;
-	color:#6C3;
+	color:#1cc0dc;
 	}
 
 .flexslider{
@@ -77,7 +77,7 @@ hgroup h2{
 
 p{
 	margin:10px 0 10px 0;
-	color: #6C3;
+	color: #1cc0dc;
 }
 
 #socmed {
@@ -98,14 +98,14 @@ p{
 	display:block;
 	padding:10px;
 	margin:10px 0 0;
-	background:#6C3;
+	background:#ec4399;
 	color:#fff;
 	cursor:pointer;
 	text-transform:uppercase;
 	font-size:20px;
 }
 .menu-toggle.toggled-on{
-	background:#6C3;
+	background:#ec4399;
 }
 .sf-menu{
 	display:none;
@@ -127,7 +127,7 @@ p{
 	text-decoration:none;
 }
 .sf-menu li a:hover{
-	background:#6C3;
+	background:#ec4399;
 	color:#fff;
 }
 .sf-menu li li a {
@@ -180,12 +180,12 @@ h1, h2, h3, h4, h5, h6{
 
 footer{ 
 	background:#FFF;
-	color:#6C3;
+	color:#ec4399;
 }
 footer a,
 a:visited,
 a:active,
-a:hover{color:#36F;
+a:hover{color:#1cc0dc;
 	text-decoration:none;
 }
 footer h1, footer h2, footer h3, footer h4{ 
@@ -197,7 +197,7 @@ footer ul{
 }
 
 a.bluelink{ 
-	background:#6C3; 
+	background:#1cc0dc; 
 	border-radius:7px; 
 	color:#fff;
 	display:block;
@@ -207,7 +207,7 @@ a.bluelink{
 	text-decoration:none;
 }
 a.bluelink:hover{
-	background:#36F;
+	background:#ec4399;
 }
 
 
@@ -375,7 +375,7 @@ ul.sf-menu li li li.sfHover ul {
 	height:25px;
 }
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-	color:			#6C3;	
+	color:			#ec4399;	
 }
 .sf-menu li li a {
 		border-top:		1px solid #fff;
@@ -388,13 +388,13 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-	background:#6C3;
+	background:#ec4399;
 	outline:		0;
 	color:#fff;
 }
 .sf-menu li:hover > a{ 
 	color:#fff;
-	background:#6C3;
+	background:#ec4399;
 }
 
 

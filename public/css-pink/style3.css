@@ -112,14 +112,14 @@ height:100px;
 
 hr 
 {
-	color: #ffd2ea;
-	border: 0; 
-	height: 1px; 
-	background: #ec4399; 
-	background-image: -webkit-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
-	background-image: -moz-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
-	background-image: -ms-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
-	background-image: -o-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
+color: #ffd2ea;
+border: 0; 
+height: 1px; 
+background: #ec4399; 
+background-image: -webkit-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
+background-image: -moz-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
+background-image: -ms-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
+background-image: -o-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
 
 }
 
@@ -218,17 +218,10 @@ footer{
 }
 footer a,
 a:visited,
-a:active{
-	color:#1cc0dc;
+a:active,
+a:hover{color:#1cc0dc;
 	text-decoration:none;
 }
-
-a:hover{
-	color:#e0ffff;
-	text-decoration:none;
-}
-
-
 footer h1, footer h2, footer h3, footer h4{ 
 	color:#CCC; 
 	margin-bottom:10px;
@@ -547,11 +540,3 @@ PRINT STYLESHEET
 .h160px {
 	height: 160px;
 	}
-	
-.snow {
-	color: #1CC0DC;
-}
-	
-.news-header {
-	color: #66cc33;
-}	

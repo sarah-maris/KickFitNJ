@@ -15,25 +15,19 @@ BASE (MOBILE) SIZE
 
 /* typography */
 body{
-	color:#666;
-	font-family:'Ubuntu', Arial, Helvetica, sans-serif;
-	text-align:left;
-	line-height:1.4em;
+	color:#333;
+	font-family:'Ubuntu', Arial, Helvetica, sans-serif; 
+	font-size:1em;
+	line-height:1.4em; 
 	font-weight:normal;
 }
 h1, h2, h3, h4, h5, h6{
-	font-weight:bold;
-	font-family:'Ubuntu', Arial, Helvetica, sans-serif;
-	line-height:100%;
-	margin:10px 0 5px 0;
-}
-h3{
-	padding-top:20px;
-	color: #333;
-}
-h4{
-	margin:10px 0 5px 0;
-}
+	font-weight:normal;
+	font-family:'Ubuntu', Arial, Helvetica, sans-serif; 
+	line-height:120%;
+	margin:40px 0 0 0;
+	padding:0;
+} 
 
 
 /* links */
@@ -43,7 +37,6 @@ a:active,
 a:hover{color:#999;
 	text-decoration:none;
 }
-
 
   
 /* structure */   
@@ -60,29 +53,32 @@ header{
 }
 	
 #hero{
-	background:#999;
+	background:#ffd2ea;
 	border-top:1px solid #e2e2e2;
 	border-bottom:1px solid #e2e2e2;
 	padding:40px 0 40px 0;
-	color:#FFF;
+	color:#000;
 	
 }
 hgroup h1{ 
 	font-size:2em;
 	margin-top:0px;
-	color:#000;
+	color:#ec4399;
 	}
 hgroup h2{ 
-	font-size:1.6em;
+	font-size:1.4em;
 	margin-top:0px;
-	color:#000;
+	color:#ec4399;
 	}
 
 .flexslider{
 	display:none;
 }
 
-p{ margin:10px 0 10px 0;}
+p{
+	margin:10px 0 10px 0;
+	color: #ec4399;
+}
 
 #socmed {
 	float: inherit
@@ -91,37 +87,6 @@ p{ margin:10px 0 10px 0;}
 .icons {
 }
 
-.thumbnail 
-{
-float:left;
-margin-right: 5px;
-padding: 5px 20px 10px 0px;
-width:100px;
-
-}
-
-.thumbnail-v
-{
-float:left;
-margin-right: 5px;
-padding: 5px 20px 10px 0px;
-height:100px;
-
-}
-
-
-hr 
-{
-	color: #ffd2ea;
-	border: 0; 
-	height: 1px; 
-	background: #ec4399; 
-	background-image: -webkit-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
-	background-image: -moz-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
-	background-image: -ms-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
-	background-image: -o-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
-
-}
 
 /* RESPONSIVE IMAGES IN CONTENT AREA. IF YOU WANT IMAGES TO BE RESPONSIVE EVERYWHERE, WRITE ANOTHER CSS RULE */
 #content img{ max-width:100%; height:auto;}
@@ -155,7 +120,7 @@ hr
 	
 }
 .sf-menu li a {
-	background:#EFEFEF;
+	background:#efefef;
 	display:block;
 	margin:1px 0; 
 	padding:10px;
@@ -163,7 +128,7 @@ hr
 }
 .sf-menu li a:hover{
 	background:#ec4399;
-	color:#FFF;
+	color:#fff;
 }
 .sf-menu li li a {
 	background:#EFEFEF;
@@ -210,25 +175,19 @@ body{
 	background:#FFF;
 }
 h1, h2, h3, h4, h5, h6{
+	color:#333; 
 }
 
 footer{ 
-	background:#ec4399;
-	color:#FFF;
+	background:#FFF;
+	color:#ec4399;
 }
 footer a,
 a:visited,
-a:active{
-	color:#1cc0dc;
+a:active,
+a:hover{color:#1cc0dc;
 	text-decoration:none;
 }
-
-a:hover{
-	color:#e0ffff;
-	text-decoration:none;
-}
-
-
 footer h1, footer h2, footer h3, footer h4{ 
 	color:#CCC; 
 	margin-bottom:10px;
@@ -238,7 +197,7 @@ footer ul{
 }
 
 a.bluelink{ 
-	background:#666; 
+	background:#ec4399; 
 	border-radius:7px; 
 	color:#fff;
 	display:block;
@@ -248,7 +207,7 @@ a.bluelink{
 	text-decoration:none;
 }
 a.bluelink:hover{
-	background:#8dbc01;
+	background:#1cc0dc;
 }
 
 
@@ -327,7 +286,7 @@ But I think that some more breathing space is good:)
 #content {  
 	float:left;
 	width:65%;
-	margin:0 0 20px 0;
+	margin:0 0 40px 0;
 }
 
 .flexslider{
@@ -431,10 +390,10 @@ ul.sf-menu li li li.sfHover ul {
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
 	background:#ec4399;
 	outline:		0;
-	color:#FFF;
+	color:#fff;
 }
 .sf-menu li:hover > a{ 
-	color:#FFF;
+	color:#fff;
 	background:#ec4399;
 }
 
@@ -475,8 +434,6 @@ ul.sf-menu li li li.sfHover ul {
 	display: block;
 }
 
-
-	
 .alpha{margin-left:0px;}
 .omega{margin-right:0px;}
 /* @
@@ -542,16 +499,3 @@ PRINT STYLESHEET
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
-
-
-.h160px {
-	height: 160px;
-	}
-	
-.snow {
-	color: #1CC0DC;
-}
-	
-.news-header {
-	color: #66cc33;
-}	

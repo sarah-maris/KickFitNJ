@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6{
 }
 h3{
 	padding-top:20px;
-	color: #6C3;
+	color: #1cc0dc;
 }
 h4{
 	margin:20px 0 5px 0;
@@ -103,14 +103,14 @@ p{ margin:10px 0 10px 0;}
 	display:block;
 	padding:10px;
 	margin:10px 0 0;
-	background:#6C3;
+	background:#ec4399;
 	color:#fff;
 	cursor:pointer;
 	text-transform:uppercase;
 	font-size:20px;
 }
 .menu-toggle.toggled-on{
-	background:#6C3;
+	background:#ec4399;
 }
 .sf-menu{
 	display:none;
@@ -132,7 +132,7 @@ p{ margin:10px 0 10px 0;}
 	text-decoration:none;
 }
 .sf-menu li a:hover{
-	background:#6C3;
+	background:#ec4399;
 	color:#fff;
 }
 .sf-menu li li a {
@@ -183,15 +183,22 @@ h1, h2, h3, h4, h5, h6{
 }
 
 footer{ 
-	background:#ECFFBD;
-	color:#6C3;
+	background:#ffd2ea;
+	color:#ec4399;
 }
 footer a,
 a:visited,
-a:active,
-a:hover{color:#36F;
+a:active{
+	color:#1cc0dc;
 	text-decoration:none;
 }
+
+a:hover{
+	color:#e0ffff;
+	text-decoration:none;
+}
+
+
 footer h1, footer h2, footer h3, footer h4{ 
 	color:#CCC; 
 	margin-bottom:10px;
@@ -379,7 +386,7 @@ ul.sf-menu li li li.sfHover ul {
 	height:25px;
 }
 .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
-	color:			#6C3;	
+	color:			#ec4399;	
 }
 .sf-menu li li a {
 		border-top:		1px solid #fff;
@@ -392,13 +399,13 @@ ul.sf-menu li li li.sfHover ul {
 }
 .sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-	background:#6C3;
+	background:#ec4399;
 	outline:		0;
 	color:#FFF;
 }
 .sf-menu li:hover > a{ 
 	color:#FFF;
-	background:#6C3;
+	background:#ec4399;
 }
 
 
@@ -522,11 +529,7 @@ PRINT STYLESHEET
 /* 08-16-14*/
 
 .month {
-	color: #6C3;
-}
-
-#new{ 
-	background:#ECFFBD;
+	color: #1cc0dc;
 }
 
 #babysitting{ 
@@ -558,10 +561,15 @@ p.bsit{
 .news-box{
 	height: 300px;
 	margin-top: 5px;
+	background:#ECFFBD;
+}
+
+.news-header {
+	color: #66cc33;
 }
 
 #babysitting h2{ 
-	color:#FF1493;
+	color:#ec4399;
 }
 
 #star {
@@ -574,14 +582,14 @@ h3 {
 }
 
 hr {
-	color: #ECFFBD;
+	color: #ffd2ea;
 	border: 0; 
 	height: 1px; 
-	background: #6C3; 
-	background-image: -webkit-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
-	background-image: -moz-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
-	background-image: -ms-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
-	background-image: -o-linear-gradient(left, #ECFFBD, #6C3, #ECFFBD); 
+	background: #ec4399; 
+	background-image: -webkit-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
+	background-image: -moz-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
+	background-image: -ms-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
+	background-image: -o-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
 
 }
 
