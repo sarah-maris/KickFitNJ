@@ -564,6 +564,10 @@ p.bsit{
 	background:#ECFFBD;
 }
 
+.news-box p{ 
+	margin:10px;
+}
+
 .news-header {
 	color: #66cc33;
 }
@@ -592,6 +596,7 @@ hr {
 	background-image: -o-linear-gradient(left, #ffd2ea, #ec4399, #ffd2ea); 
 
 }
+
 
 
 #new > p, #babysitting >p {
