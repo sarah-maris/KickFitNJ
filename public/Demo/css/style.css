@@ -1,0 +1,548 @@
+body{
+	color:#333;
+	font-family:'Ubuntu', Arial, Helvetica, sans-serif; 
+	font-size:1em;
+	line-height:1.4em; 
+	font-weight:normal;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+	font-family:'Ubuntu', Arial, Helvetica, sans-serif; 
+	line-height:120%;
+	margin:40px 0 0 0;
+	padding:0;
+} 
+
+#logo {
+   width: 25%;
+    display: block;
+    float: left;    
+}
+
+#topnav {
+    width: 75%;    
+}
+
+.sf-menu a {
+    width: 85px;
+}
+
+
+.header__menu {
+  display: none;
+}
+
+@media screen and (max-width: 920px) {
+  .header__logo {
+    height: 42px;
+	margin: 5px;
+  }
+  
+  .header__title {
+    font-size: 1.5em;
+    margin-top: 20px
+  }
+  
+  .header__menu {
+	display: inline-block;
+	position: absolute;
+	padding: 10px;
+	right: 0;
+  }
+
+  #menu svg {
+	width: 40px;
+		vertical-align: middle;
+  }
+
+  .nav {
+	z-index: 10;
+	background-color: #fff;
+    width: 150px;
+    position: absolute;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-150px, 0);
+    transform: translate(-150px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.3s ease;
+  }
+  
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  
+  .nav__item {
+	display: block;
+	padding-left: 0;
+	border-bottom: 1px solid #E0E0E0;
+	width: 100%;
+	text-align: left;
+  }
+  
+  .nav__item a {
+	text-align: left;
+  }
+}
+
+
+
+
+
+/* links */
+a,
+a:visited,
+a:active,
+a:hover{color:#999;
+	text-decoration:none;
+}
+
+  
+/* structure */   
+.wrapper, #colophon{
+	width: 92%; 
+	margin: .5em auto;
+	padding:0;
+}
+header{ 
+	padding:10px 0 0 0;
+    margin: 0;
+}
+#banner{ 
+	text-align:center;
+}
+	
+#hero{
+	background:#e0ffff;
+	border-top:1px solid #e2e2e2;
+	border-bottom:1px solid #e2e2e2;
+	padding:40px 0 40px 0;
+	color:#000;
+	
+}
+hgroup h1{ 
+	font-size:2em;
+	margin-top:0px;
+	color:#1cc0dc;
+	}
+hgroup h2{ 
+	font-size:1.4em;
+	margin-top:0px;
+	color:#1cc0dc;
+	}
+
+.flexslider{
+	display:none;
+}
+
+p{
+	margin:10px 0 10px 0;
+	color: #1cc0dc;
+}
+
+
+/* RESPONSIVE IMAGES IN CONTENT AREA. IF YOU WANT IMAGES TO BE RESPONSIVE EVERYWHERE, WRITE ANOTHER CSS RULE */
+#content img{ max-width:100%; height:auto;}
+
+
+/*MAIN MENU*/
+
+.menu-toggle{
+	display:block;
+	padding:10px;
+	margin:10px 0 0;
+	background:#ec4399;
+	color:#fff;
+	cursor:pointer;
+	text-transform:uppercase;
+	font-size:20px;
+}
+.menu-toggle.toggled-on{
+	background:#ec4399;
+}
+.sf-menu{
+	display:none;
+}	
+.sf-menu.toggled-on{
+	display:block;
+}
+
+.sf-menu{
+	clear:both;
+	margin-bottom:60px;
+	
+}
+.sf-menu li a {
+	background:#efefef;
+	display:block;
+	margin:1px 0; 
+	padding:5px;
+	text-decoration:none;
+    text-align: center;
+}
+.sf-menu li a:hover{
+	background:#ec4399;
+	color:#fff;
+}
+.sf-menu li li a {
+	background:#EFEFEF;
+	padding-left:40px;
+}
+.sf-menu li li li a {
+	background:#efefef;
+	padding-left:80px;
+}
+
+/*SECONDARY MENU*/
+#secondary-navigation{
+	margin-bottom:60px;
+}
+#secondary-navigation ul{
+	margin:0;
+	padding:0;
+}
+#secondary-navigation ul li a{ 
+	background:#E6E6E6;
+	display:block;
+	margin:5px 0; 
+	padding:10px;
+	text-decoration:none;
+}
+#secondary-navigation ul li a:hover{
+	background:#0099ff;
+	color:#fff;
+}
+
+footer{  
+	clear:both;
+	font-size:1em;
+	padding:5px 0;
+	text-align:center;
+}
+footer ul{
+	margin:0;
+	padding:0;
+}
+
+/*colors and backgrounds*/
+body{
+	background:#FFF;
+}
+h1, h2, h3, h4, h5, h6{
+	color:#333; 
+}
+
+footer{ 
+	background:#FFF;
+	color:#ec4399;
+}
+footer a,
+a:visited,
+a:active,
+a:hover{color:#1cc0dc;
+	text-decoration:none;
+}
+footer h1, footer h2, footer h3, footer h4{ 
+	color:#CCC; 
+	margin-bottom:10px;
+}
+footer ul{
+	margin:0 0 0 8%;
+}
+
+a.bluelink{ 
+	background:#1cc0dc; 
+	border-radius:7px; 
+	color:#fff;
+	display:block;
+	float:left; 
+	margin:10px 15px 10px 0; 
+	padding:10px;
+	text-decoration:none;
+}
+a.bluelink:hover{
+	background:#ec4399;
+}
+
+
+/* ==|== non-semantic helper classes ========================================
+   ========================================================================== */
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */ 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.rightfloat{
+	float:right;
+}
+.leftfloat{
+	float:left;
+}
+
+
+@media only screen and (min-width: 481px) {
+#banner{
+	float:left;
+	text-align:left;
+}
+.menu-toggle{/*make menu float right, instead of sitting under the logo*/
+	margin-top:60px; /*this depends on the height of the logo*/
+	float:right;
+}
+
+} 
+
+@media only screen and (min-width: 920px) {
+
+    .wrapper, #colophon{
+        max-width: 1200px; 
+        margin: 0 auto;
+        padding: 0 .75em;
+    }
+
+    #banner{ 
+        float:left; 
+        text-align:left;
+        padding-right:2%;
+        width:300px;
+    }
+
+    #hero{
+        padding:40px 0 10px 0;
+    }
+
+    #content {  
+        float:left;
+        width:65%;
+        margin:0 0 40px 0;
+    }
+
+    .flexslider{
+        display:block;
+        width:57%;
+        float:right;
+    }
+
+    aside { 
+        float:right;
+        width:30%;
+        margin:0 0 40px 0;
+    }
+
+    /*** MAIN MENU - ESSENTIAL STYLES ***/
+
+    .menu-toggle{display:none;}
+    #menu-main-navigation{
+        display:block;
+        }
+
+    .sf-menu, .sf-menu * {
+        margin:			0;
+        padding:		0;
+        list-style:		none;
+    }
+    .sf-menu ul {
+        position:		absolute;
+        top:			-999em;
+        width:			12em; /* left offset of submenus need to match (see below) */
+    }
+    .sf-menu ul li {
+        width:			100%;
+        font-size:.85em;
+        line-height:1.1em; 
+        font-weight:normal;
+    }
+    .sf-menu li:hover {
+        visibility:		inherit; /* fixes IE7 'sticky bug' */
+    }
+    .sf-menu li {
+        float:			left;
+        position:		relative;
+    }
+    .sf-menu a {
+        display:		block;
+        position:		relative;
+    }
+    .sf-menu li:hover ul,
+    .sf-menu li.sfHover ul {
+        left:			0;
+        top:			45px; /* match top ul list item height */
+        z-index:		99;
+        -webkit-box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
+        box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
+    }
+    ul.sf-menu li:hover li ul,
+    ul.sf-menu li.sfHover li ul {
+        top:			-999em;
+    }
+    ul.sf-menu li li:hover ul,
+    ul.sf-menu li li.sfHover ul {
+        left:			12em; /* match ul width */
+        top:			0;
+    }
+    ul.sf-menu li li:hover li ul,
+    ul.sf-menu li li.sfHover li ul {
+        top:			-999em;
+    }
+    ul.sf-menu li li li:hover ul,
+    ul.sf-menu li li li.sfHover ul {
+        left:			10em; /* match ul width */
+        top:			0;
+    }
+
+    /*** DEMO SKIN ***/
+    #topnav, .sf-menu {
+        float:right;
+        margin: 1em 0 0 0;
+    }
+    .sf-menu a {
+        text-decoration:none;
+    }
+    .sf-menu li a {
+        background:#fff;
+        margin:0; 
+        padding:10px 20px;
+        height:25px;
+    }
+    .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+        color:			#ec4399;	
+    }
+    .sf-menu li li a {
+            border-top:		1px solid #fff;
+            background:		#e8e8e8;
+            padding-left:20px;
+    }
+    .sf-menu li li li a{
+        padding-left:20px;
+        background:	#e8e8e8;
+    }
+    .sf-menu li:hover, .sf-menu li.sfHover,
+    .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+        background:#ec4399;
+        outline:		0;
+        color:#fff;
+    }
+    .sf-menu li:hover > a{ 
+        color:#fff;
+        background:#ec4399;
+    }
+
+
+    /*GRID*/
+    /*
+     & Columns : 12 
+
+     */
+    .grid_1 { width: 5%; }
+    .grid_2 { width: 13.333333333333%; }
+    .grid_3 { width: 21.666666666667%; }
+    .grid_4 { width: 30%; }
+    .grid_5 { width: 38.333333333333%; }
+    .grid_6 { width: 46.666666666667%; }
+    .grid_7 { width: 55%; }
+    .grid_8 { width: 63.333333333333%; }
+    .grid_9 { width: 71.666666666667%; }
+    .grid_10 { width: 80%; }
+    .grid_11 { width: 88.333333333333%; }
+    .grid_12 { width: 96.666666666667%; }
+
+    .grid_1,
+    .grid_2,
+    .grid_3,
+    .grid_4,
+    .grid_5,
+    .grid_6,
+    .grid_7,
+    .grid_8,
+    .grid_9,
+    .grid_10,
+    .grid_11,
+    .grid_12 {
+        margin-left: 1.6666666666667%;
+        margin-right: 1.6666666666667%;
+        float: left;
+        display: block;
+    }
+
+    .alpha{margin-left:0px;}
+    .omega{margin-right:0px;}
+    /* @
+     * tinyfluidgrid.com
+     & girlfriendnyc.com
+     */
+
+}
+
+/*
+DESKTOP
+This is the average viewing window. So Desktops, Laptops, and
+in general anyone not viewing on a mobile device. Here's where
+you can add resource intensive styles.
+*/
+@media only screen and (min-width: 1030px) {
+
+} 
+
+/*
+LARGE VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: 1240px) {
+
+} 
+
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution.
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min--moz-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+
+
+} 
+
+/*
+iPHONE 5 MEDIA QUERY
+iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) { 
+
+  
+}
+
+/*
+PRINT STYLESHEET
+*/
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
