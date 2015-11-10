@@ -1,3 +1,6 @@
+/* BASIC SET UP */
+
+
 body{
 	color:#333;
 	font-family:'Ubuntu', Arial, Helvetica, sans-serif; 
@@ -13,81 +16,188 @@ h1, h2, h3, h4, h5, h6{
 	padding:0;
 } 
 
+
+/* SAM CHANGES */
 #logo {
-   width: 25%;
+   width: 15%;
     display: block;
     float: left;    
 }
 
-#topnav {
-    width: 75%;    
+#page-title {
+    color: #777;
+    margin: 40px 0 20px 0;
+    font-weight: bold;
 }
 
-.sf-menu a {
-    width: 85px;
+.day-name {
+    text-transform: uppercase;
+    margin: auto 10px;
 }
 
-
-.header__menu {
+/* RESPONSIVE MENU */
+#m-toggle {
   display: none;
 }
 
+#topnav {
+    width: 85%;
+    float: right;
+}
+
+.sf-menu a {
+  /*  width: 85px; */
+}
+
+
+/* SCHEDULE FLEXBOX */
+
+.flex-container {
+  width: 100%;
+  flex-direction: row;  
+  display: -webkit-inline-flex; /* Safari */
+  display: inline-flex;
+  -webkit-flex-wrap: nowrap; /* Safari */
+  flex-wrap:         nowrap;
+  -webkit-justify-content: space-between; /* Safari */
+  justify-content:         space-between;
+}
+
+.day {
+    width: calc((100% - 50px)/6);
+    text-align: center;
+    flex-direction: column;  
+    display: -webkit-inline-flex; /* Safari */
+    display: inline-flex;
+    -webkit-flex-wrap: nowrap; /* Safari */
+    flex-wrap: nowrap;
+}
+
+.fit-class {
+    padding: 5px;
+    margin: 10px 5px;
+    height: 100px;
+}
+
+.class-name {
+    height: 44px;
+}
+
+
+/* COLOR AND FONT WEIGHTS*/
+
+.start-time {
+    font-weight: bold;
+}
+.instructor {
+    font-style: italic;
+}
+
+.day,
+.class-name, 
+.instructor,
+.start-time {
+    color: #777;
+    margin: 0;
+}
+.month {
+	color: #1cc0dc;
+}
+
+#babysitting { 
+	background:#FFD2EA;
+}
+
+.pilates {
+	background:#F9F7B4;
+}
+.weights { 
+	background:#ECFFBD;
+}
+.cardio { 
+	background:#FFD2EA;
+}
+.comp { 
+	background:#E0FFFF;
+}
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 920px) {
-  .header__logo {
-    height: 42px;
-	margin: 5px;
-  }
-  
-  .header__title {
-    font-size: 1.5em;
-    margin-top: 20px
-  }
-  
-  .header__menu {
+
+    /* RESIZE TEXT */
+    .day-name 
+    .class-name, 
+    .instructor,
+    .start-time {
+        font-size: 1em;
+    }
+    
+  /* RESPONSIVE MENU */  
+  #m-toggle {
 	display: inline-block;
 	position: absolute;
 	padding: 10px;
 	right: 0;
   }
 
-  #menu svg {
+  #m-toggle svg {
 	width: 40px;
-		vertical-align: middle;
+	vertical-align: middle;
   }
 
-  .nav {
+  nav {
 	z-index: 10;
-	background-color: #fff;
-    width: 150px;
     position: absolute;
-    /* This trasform moves the drawer off canvas. */
     -webkit-transform: translate(-150px, 0);
     transform: translate(-150px, 0);
-    /* Optionally, we animate the drawer. */
     transition: transform 0.3s ease;
+    margin-top: 91px;
   }
-  
-  .nav.open {
+  #topnav {
+    width: 100px;
+  }
+  nav.open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
   }
   
-  .nav__item {
+  .open li {
 	display: block;
 	padding-left: 0;
-	border-bottom: 1px solid #E0E0E0;
 	width: 100%;
 	text-align: left;
   }
   
-  .nav__item a {
+  .open li a {
 	text-align: left;
+    width: 100%;
+  }
+  
+  .sf-menu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 
+/* MEDIA QUERIES */
+@media screen and (max-width: 860px){
+    .flex-container {
+        flex-direction: column; 
+    }
 
+    .day {
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .day-name,
+    .fit-class {
+        width: 150px
+    }
+} 
 
-
+/* PRE-EXISTING CSS */
 
 /* links */
 a,
@@ -100,8 +210,7 @@ a:hover{color:#999;
   
 /* structure */   
 .wrapper, #colophon{
-	width: 92%; 
-	margin: .5em auto;
+	margin: 10px auto;
 	padding:0;
 }
 header{ 
@@ -137,31 +246,13 @@ hgroup h2{
 
 p{
 	margin:10px 0 10px 0;
-	color: #1cc0dc;
+	/* color: #1cc0dc; */
 }
-
-
-/* RESPONSIVE IMAGES IN CONTENT AREA. IF YOU WANT IMAGES TO BE RESPONSIVE EVERYWHERE, WRITE ANOTHER CSS RULE */
-#content img{ max-width:100%; height:auto;}
-
 
 /*MAIN MENU*/
 
-.menu-toggle{
-	display:block;
-	padding:10px;
-	margin:10px 0 0;
-	background:#ec4399;
-	color:#fff;
-	cursor:pointer;
-	text-transform:uppercase;
-	font-size:20px;
-}
-.menu-toggle.toggled-on{
-	background:#ec4399;
-}
 .sf-menu{
-	display:none;
+	
 }	
 .sf-menu.toggled-on{
 	display:block;
@@ -229,7 +320,7 @@ body{
 	background:#FFF;
 }
 h1, h2, h3, h4, h5, h6{
-	color:#333; 
+
 }
 
 footer{ 
@@ -309,11 +400,11 @@ a.bluelink:hover{
 
 } 
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 921px) {
 
     .wrapper, #colophon{
         max-width: 1200px; 
-        margin: 0 auto;
+        margin: 0;
         padding: 0 .75em;
     }
 
@@ -418,7 +509,7 @@ a.bluelink:hover{
     .sf-menu li a {
         background:#fff;
         margin:0; 
-        padding:10px 20px;
+        padding:10px 15px;
         height:25px;
     }
     .sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
@@ -490,14 +581,12 @@ a.bluelink:hover{
 
 }
 
-/*
-DESKTOP
-This is the average viewing window. So Desktops, Laptops, and
-in general anyone not viewing on a mobile device. Here's where
-you can add resource intensive styles.
-*/
-@media only screen and (min-width: 1030px) {
 
+@media only screen and (max-width: 1020px) {
+    .sf-menu li a { 
+        padding:10px;
+        height:25px;
+    }
 } 
 
 /*

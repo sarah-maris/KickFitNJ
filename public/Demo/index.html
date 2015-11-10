@@ -41,9 +41,14 @@
         <div id="logo">
             <img src="images/logo2.png" width="150" alt="KickFit logo">
         </div>
-        
-        <nav id="topnav" role="navigation">
-            <h5 class="menu-toggle">Menu</h5>  
+                <a id="m-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                </svg>
+            </a>  
+        <nav id="topnav" role="navigation" class="closed">
+  
+          
                 <ul class="sf-menu" id="menu-main-navigation">
                     <li>
                         <a href="mission.html">Mission</a>
@@ -67,19 +72,16 @@
                         <a href="http://kickdancestudios.com/">Kids Dance</a>
                     </li>
             </ul> 
-                  <a id="menu" class="header__menu">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-        </svg>
-      </a>
+
 		</nav>
   
     </header><!-- end header -->
- 
- <section id="main-image">
+    <main>
+        <section id="main-image">
     <img src="images/side-plank.jpg" width="100%" alt="KickFit logo">
  </section>
-<section id="hero" class="clearfix">    
+<section id="hero" class="clearfix">
+<!-- TODO: Three columns - inspiration, class pic, news -->
 <div class="wrapper">
 	<div class="grid_5 alpha">
     	<hgroup>
@@ -97,16 +99,18 @@
         Fair Haven, NJ 07704<br>
         732.379.8514        </p>
           
-           <p><a href="rates.html" class="bluelink">RATES & SPECIALS</a></p>
+            <p><a href="rates.html" class="bluelink">RATES & SPECIALS</a></p>
 
 
       
-</div>
-</section>
+            </div>
+        </section>
 
-
-
-
+<!-- TODO: #Schedule  -->
+<!-- TODO: #classes/instructors  -->
+<!-- TODO: #rates -->
+    </main>
+<!-- TODO: Make two versions of footer -- hide the bullets when vertically stacked -->  
     <footer>
         <div id="colophon" class="clearfix">
             <div class="grid_12">
@@ -131,7 +135,25 @@
 <script src="js/main.js"></script>
         
 <!-- ADD BACK GOOGLE ANALYTICS -->	
+	    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#m-toggle');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('nav');
 
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        drawer.classList.toggle('closed');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+      console.log("What happens here????");
+        drawer.classList.remove('open');
+      });
+
+    </script>
 
 </body>
 </html>
