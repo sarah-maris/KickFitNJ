@@ -603,3 +603,30 @@ hr {
 	margin-left: 20px;
 	margin-right: 20px;
 }
+
+.christmas {
+	background-color: #80BD53;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.christmas .month,
+.christmas h3 {
+	color: red;
+	padding: 0;
+}
+
+
+.newyears {
+	background-color: #1cc0dc;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+.newyears .month,
+.newyears h3 {
+	color: #fff;
+	padding: 0;
+}
+
+
