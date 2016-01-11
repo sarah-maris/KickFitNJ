@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5, h6{
 	padding:0;
 }
 
-
 /* HEADER */
 #logo {
    width: 275px;
@@ -151,7 +150,52 @@ ul.sf-menu li li li.sfHover ul {
     background:#ec4399;
 }
 /* SERVICE BOXES */
+#service-boxes {
+	flex-basis: 100%;
+	flex-direction: row;
+	display: -webkit-inline-flex; /* Safari */
+	display: inline-flex;
+	-webkit-flex-wrap: wrap; /* Safari */
+	flex-wrap:         wrap;
+	margin: auto;
+}
 
+#group {
+	flex-basis: 33%;
+	border-radius: 5px;
+}
+#personal {
+	flex-basis: 33%;
+	border-radius: 5px;
+}
+
+#other {
+	flex-basis: 33%;
+	border-radius: 5px;
+	
+}
+
+.calm {
+    width: 85%;
+    display: block;
+    margin: 50px auto;
+    border-radius: 15px;
+}
+
+.service {
+    width: 150px;
+    display: block;
+    margin: 40px auto;
+    border-radius: 75px
+}
+
+
+#service-boxes h4 {
+    color: #666;
+	font-weight: bold;
+	text-align: center;
+    text-transform: uppercase;
+}
 
 /* SCHEDULE FLEXBOX */
 
