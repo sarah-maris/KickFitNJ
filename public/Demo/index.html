@@ -1,58 +1,62 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
 <html lang="en">
     <head>
-    <title>KickFit | Fitness Classes | Great Workouts</title>
-    <meta charset="utf-8">
-    <meta name="description" content="Kick Fit. Monmouth County's Premier Boutique Gym, featuring classes in Pilates, Barre, Total Body Conditioning, PLYOGA and more.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- CSS-->
-<!--<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
-
-<link rel="stylesheet" href="css/normalize.css">-->
-<link rel="stylesheet" href="css/style.css">
-
-<!--[if lt IE 9]>
-<link rel='stylesheet' id='bones-ie-only-css'  href='css/ie.css' type='text/css' media='all' />
-<![endif]-->
-
-<!-- end CSS-->
-
-<!-- JS
-<script src="js/libs/modernizr-2.6.2.min.js"></script>
-<!-- end JS-->
-
-</head>
-
-<!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+		<title>KickFit | Fitness Classes | Great Workouts</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Kick Fit. Monmouth County's Premier Boutique Gym, featuring classes Pilates-infused Group and Personal Training.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS-->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet'>
+		<link rel="stylesheet" href="css/style.css">
+		<!-- end CSS-->
+	</head>
+<body>
+	<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=546515132050401";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 
-<!-- header area -->
+
+
+
+
+
+	<!-- header area -->
     <header class="wrapper clearfix">
 
 
         <div id="logo">
-            <img src="images/logo2.png" width="150" alt="KickFit logo">
+            <img src="images/kickfit-header-logo.png" style="width:100%" alt="KickFit logo">
         </div>
                 <a id="m-toggle">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                     <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
                 </svg>
             </a>
+
+  <!-- Your Facebook Like button code -->
+     <div id="socmed-top" style="float: right">
+       <div class="fb-like" data-href="https://www.facebook.com/Kickfit-170697759786007/"
+        data-layout="standard"
+        data-action="like"
+        data-show-faces="true"
+        data-share="true"
+        style="vertical-align: bottom; width: 450px; height: 57px; background-color: #e8e8e8">
+      </div>
+    </div>
+
+
         <nav id="topnav" role="navigation" class="closed">
 
 
                 <ul class="sf-menu" id="menu-main-navigation">
-                    <li>
-                        <a href="mission.html">Mission</a>
-                    </li>
                     <li>
                         <a href="schedule.html">Schedule</a>
                     </li>
@@ -66,7 +70,7 @@
                         <a href="news.html">News</a>
                     </li>
                     <li>
-                        <a href="rates.html">Rates</a>
+                        <a href="#rates">Rates</a>
                     </li>
                     <li>
                         <a href="http://kickdancestudios.com/">Kids Dance</a>
@@ -77,9 +81,75 @@
 
     </header><!-- end header -->
     <main>
-        <section id="main-image">
-    <img src="images/side-plank.jpg" width="100%" alt="KickFit logo">
- </section>
+		<section id="main-image">
+			<img src="images/side-plank.jpg" width="100%" alt="KickFit logo">
+		</section>
+	<section id="service-boxes">
+
+	</section>
+     <section id="schedule" >
+
+		<h1 class="sched">Class Schedule</h1>
+
+		<div id="class-list" class="flex-container">
+
+			<div class="day mon">
+				<h3 class="day-name">Monday</h3>
+				<div class="weights fit-class mon eight">
+					<h4 class="start-time">8:35 AM</h4>
+					<p class="class-name">Total Body Conditioning</p>
+					<p class="instructor">Sharon</p>
+				</div>
+			</div>
+
+			<div class="day tues">
+				<h3 class="day-name">Tuesday</h3>
+				<div class="cardio fit-class tues eight">
+					<h4 class="start-time">8:35 AM</h4>
+					<p class="class-name">Conditioning<br>& Cardio</p>
+					<p class="instructor">Dawn</p>
+				</div>
+			</div>
+
+			<div class="day weds">
+				<h3 class="day-name ">Wednesday</h3>
+				<div class="weights fit-class weds eight">
+					<h4 class="start-time">8:35 AM</h4>
+					<p class="class-name">Total Body Conditioning</p>
+					<p class="instructor">Dawn</p>
+				</div>
+			</div>
+
+			<div class="day thurs">
+				<h3 class="day-name">Thursday</h3>
+				<div class="pilates fit-class thurs eight">
+					<h4 class="start-time">8:35 AM</h4>
+					<p class="class-name">Pilates</p>
+					<p class="instructor">Dawn</p>
+				</div>
+			</div>
+
+
+			<div class="day fri">
+				<h3 class="day-name">Friday</h3>
+				<div class="weights fit-class fri eight">
+					<h4 class="start-time">8:35 AM</h4>
+					<p class="class-name">Total Body Conditioning</p>
+					<p class="instructor">Dawn</p>
+				</div>
+			</div>
+			<div class="day type">
+				<div class="fit-class">
+					<h3 class="day-name">CLASS TYPE</h3>
+					<p class="class-type weights">Strength</p>
+					<p class="class-type cardio">Cardio</p>
+					<p class="class-type pilates">Core/Flexibility</p>
+				</div>
+			</div>
+		</div><!-- end #class-list -->
+
+	</section><!-- end #schedule -->
+ 
 <section id="hero" class="clearfix">
 <!-- TODO: Three columns - inspiration, class pic, news -->
 <div class="wrapper">
@@ -91,21 +161,26 @@
 		<div>
 		   <p><strong>Kickfit is your neighborhood gym conveniently located near ALL Fair Haven and Rumson schools</strong></p>
 		   </div>
+It's $145 a month unlimited classes
+Passbook 10 for $150
+$20 drop in?
 
-
-        <p>
-        Kick Fit<br>
-		611 River Road<br>
-        Fair Haven, NJ 07704<br>
-        732.379.8514        </p>
 
             <p><a href="rates.html" class="bluelink">RATES & SPECIALS</a></p>
 
 
-
             </div>
         </section>
-
+  <!-- Your Facebook Like button code -->
+     <div id="socmed-bottom">
+       <div class="fb-like" data-href="https://www.facebook.com/Kickfit-170697759786007/"
+        data-layout="standard"
+        data-action="like"
+        data-show-faces="true"
+        data-share="true"
+        style="vertical-align: bottom; width: 450px; height: 57px; background-color: #e8e8e8">
+      </div>
+    </div>
 <!-- TODO: #Schedule  -->
 <!-- TODO: #classes/instructors  -->
 <!-- TODO: #rates -->
