@@ -150,8 +150,8 @@ ul.sf-menu li li li.sfHover ul {
     background:#ec4399;
 }
 /* SERVICE BOXES */
-#service-boxes {
-	flex-basis: 100%;
+#philosophy {
+	flex-basis: 90%;
 	flex-direction: row;
 	display: -webkit-inline-flex; /* Safari */
 	display: inline-flex;
@@ -170,9 +170,10 @@ ul.sf-menu li li li.sfHover ul {
 }
 
 #other {
+	align-items: center;
+	display: flex;
 	flex-basis: 33%;
-	border-radius: 5px;
-	
+	justify-content: center;
 }
 
 .calm {
@@ -190,8 +191,8 @@ ul.sf-menu li li li.sfHover ul {
 }
 
 
-#service-boxes h4 {
-    color: #666;
+#philosophy h4 {
+    color: #777;
 	font-weight: bold;
 	text-align: center;
     text-transform: uppercase;
@@ -200,10 +201,19 @@ ul.sf-menu li li li.sfHover ul {
 /* SCHEDULE FLEXBOX */
 
 #schedule {
+	width: 100%;
+	background: #e0ffff;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 0 0 20px 0;
+}
+
+.schedule-grid {
 	margin: auto;
 	width: 960px;
+    padding: 0;
 }
-.sched {
+.schedule-title {
 	flex-basis: 100%;
 	margin:  0;
 	padding: 40px 0 20px 10px;
@@ -352,7 +362,7 @@ ul.sf-menu li li li.sfHover ul {
 }
 
 
-/* COLOR AND FONT WEIGHTS*/
+/* COLOR AND FONT strength*/
 
 .start-time {
     font-weight: bold;
@@ -374,16 +384,16 @@ ul.sf-menu li li li.sfHover ul {
 }
 
 .pilates {
-	background:#F9F7B4;
+	background:#daf7ca;
 }
-.weights {
-	background:#ECFFBD;
+.strength {
+	background:#ffd2ea
 }
 .cardio {
-	background:#FFD2EA;
+	background:#ffffa9;
 }
 .comp {
-	background:#E0FFFF;
+	background:#e0fff;
 }
 /* FACEBOOK LINK  */
 	#socmed-bottom {
@@ -393,11 +403,58 @@ ul.sf-menu li li li.sfHover ul {
 	}
 
 
+
+/* FOOTER */
+
+footer{
+
+	text-align:center;
+	background: #ec4399;
+    color: #fff;
+    clear: both;
+	font-size: 1em;
+	padding: 5px 0;
+}
+
+footer ul{
+	margin:0;
+	padding:0;
+}
+
+footer {
+
+
+}
+
+
+footer a,
+footer a:visited {
+	color:#1cc0dc;
+	text-decoration:none;
+}
+
+
+footer a:active,
+footer a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+footer h1, footer h2, footer h3, footer h4{
+	color:#CCC;
+	margin-bottom:10px;
+}
+
+footer ul{
+	margin:0 0 0 8%;
+}
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1000px){
 
-	#schedule {
+	.schedule-grid {
 		margin: auto;
 		width: 100%;
 	}
@@ -444,12 +501,12 @@ ul.sf-menu li li li.sfHover ul {
 		width: 150px;
 		margin: 160px 0 0 0
 	}
-	
+
 	.sf-menu a, .sf-menu a:visited {
 		background-color: #e8e8e8;
 		border-bottom: 1px solid #fff;
 }
-	
+
   nav.open {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
@@ -472,7 +529,7 @@ ul.sf-menu li li li.sfHover ul {
     margin: 0;
     padding: 0;
   }
-  
+
   /* LOGO AND FACEBOOK */
 	#logo {
 		width: 250px;
@@ -481,7 +538,7 @@ ul.sf-menu li li li.sfHover ul {
 	#socmed-top {
 		display: none;
 	}
-	
+
 	#socmed-bottom {
 		display: block;
 	}
@@ -501,6 +558,16 @@ ul.sf-menu li li li.sfHover ul {
     .type {
         width: 25%;
     }
+
+	#group,
+	#personal,
+	#other {
+		flex-basis: 100%;
+	}
+
+	.calm {
+  		width: 50%;
+	}
 
 }
 
@@ -574,17 +641,6 @@ p{
 }
 
 
-footer{
-	clear:both;
-	font-size:1em;
-	padding:5px 0;
-	text-align:center;
-}
-footer ul{
-	margin:0;
-	padding:0;
-}
-
 /*colors and backgrounds*/
 body{
 	background:#FFF;
@@ -593,23 +649,7 @@ h1, h2, h3, h4, h5, h6{
 
 }
 
-footer{
-	background:#FFF;
-	color:#ec4399;
-}
-footer a,
-a:visited,
-a:active,
-a:hover{color:#1cc0dc;
-	text-decoration:none;
-}
-footer h1, footer h2, footer h3, footer h4{
-	color:#CCC;
-	margin-bottom:10px;
-}
-footer ul{
-	margin:0 0 0 8%;
-}
+
 
 a.bluelink{
 	background:#1cc0dc;
