@@ -231,97 +231,7 @@ ul.sf-menu li li li.sfHover ul {
 	margin: auto;
 }
 
-/* FLEX ORDER */
 
-.day.mon {
-	order: 10;
-}
-.day.tues {
-	order: 20;
-}
-.day.weds {
-	order: 30;
-}
-.day.thurs {
-	order: 40;
-}
-.day.fri {
-	order: 50;
-}
-.day.sat {
-	order: 60;
-}
-.mon.eight {
-	order: 71;
-}
-.mon.nine {
-	order: 81;
-}
-.tues.eight {
-	order: 72;
-}
-.tues.nine {
-	order: 82;
-}
-.tues.plus {
-	order: 92;
-}
-.weds.eight {
-	order: 73;
-}
-.weds.nine {
-	order: 83;
-}
-.weds.plus {
-	order: 93;
-}
-.thurs.eight {
-	order: 74;
-}
-.thurs.nine {
-	order: 84;
-}
-.thurs.plus {
-	order: 94;
-}
-.fri.eight {
-	order: 75;
-}
-.fri.nine {
-	order: 85;
-}
-.fri.plus {
-	order: 95;
-}
-.sat.eight {
-	order: 76;
-}
-.sat.nine {
-	order: 86;
-}
-.sat.plus {
-	order: 96;
-}
-
-.news-box {
-	order: 101;
-	width: 590px;
-	padding: 20px;
-	margin: 30px 5px 5px 5px;
-	background: #ECFFBD;
-	border-radius: 5px;
-}
-
-.babysitting {
-	order: 102;
-	background:#FFD2EA;
-	border-radius: 5px;
-	padding: 20px;
-	margin: 30px 5px 5px 5px;
-	width: 270px;
-	text-align:center;
-
-}
 .day {
     flex-basis: 20%;
     text-align: center;
@@ -354,7 +264,6 @@ ul.sf-menu li li li.sfHover ul {
     margin: 0;
 	padding: 0;
 }
-
 
 
 .class-name {
