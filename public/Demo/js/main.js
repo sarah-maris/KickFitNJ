@@ -1,16 +1,3 @@
-
-// Fireup the plugins
-$(document).ready(function(){
-		
-	// initialise  slideshow
-	 $('.flexslider').flexslider({
-        animation: "slide",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-
-});
 /**
  * Handles toggling the navigation menu for small screens.
  */

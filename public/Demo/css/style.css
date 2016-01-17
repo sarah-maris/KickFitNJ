@@ -378,12 +378,15 @@ ul.sf-menu li li li.sfHover ul {
 	margin: 0 0 10px 0;
 }
 /* FACEBOOK LINK  */
-	#socmed-bottom {
-		display: none;
-		float: left;
-		background-color: #FFD2EA;
-	}
+#social-media {
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+}
 
+#social-media {
+	margin: 20px auto;
+}
 
 /* FOOTER */
 
