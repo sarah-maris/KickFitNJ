@@ -2,7 +2,7 @@
 
 
 body{
-	color:#333;
+	color:#555;
 	font-family:'Ubuntu', Arial, Helvetica, sans-serif;
 	font-size:1em;
 	line-height:1.4em;
@@ -213,7 +213,7 @@ ul.sf-menu li li li.sfHover ul {
 	width: 960px;
     padding: 0;
 }
-.schedule-title {
+.title {
 	flex-basis: 100%;
 	margin:  0;
 	padding: 40px 0 20px 10px;
@@ -221,7 +221,7 @@ ul.sf-menu li li li.sfHover ul {
 	font-weight: bold;
 }
 
-.flex-container {
+.class-list {
 	flex-basis: 100%;
 	flex-direction: row;
 	display: -webkit-inline-flex; /* Safari */
@@ -304,13 +304,66 @@ ul.sf-menu li li li.sfHover ul {
 .comp {
 	background:#e0fff;
 }
+
+
+#rates {
+    width: 100%;
+    background: #ffd2ea;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 0 0 20px 0;
+}
+
+.rate-grid {
+    margin: auto;
+    width: 960px;
+    padding: 0;
+
+}
+
+.rate-boxes {
+    flex-direction: row;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0 20px 10px;
+}
+
+.rate-type {
+	flex-basis: 50%;
+    text-align: left;
+    flex-direction: column;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.rate-title {
+	color: #777;
+	text-transform: uppercase;
+
+}
+
+.option-title {
+	color: #777;
+	font: bold 1em/1.2em 'Ubuntu', Arial, Helvetica, sans-serif;
+	padding: 20px 0 0 0;
+
+}
+
+.rate-info {
+	margin: 0 0 10px 0;
+}
 /* FACEBOOK LINK  */
 	#socmed-bottom {
 		display: none;
 		float: left;
 		background-color: #FFD2EA;
 	}
-
 
 
 /* FOOTER */
@@ -363,17 +416,14 @@ footer ul{
 
 @media screen and (max-width: 1000px){
 
-	.schedule-grid {
+	.schedule-grid,
+	.rate-grid {
 		margin: auto;
 		width: 100%;
 	}
 
-	.flex-container {
-	  flex-basis: 100%;
-    }
-
-
 }
+
 @media screen and (max-width: 920px) {
 
 	/* RESIZE TEXT */
@@ -491,10 +541,30 @@ footer ul{
         font-size: 1.2em;
     }
 
-    .day {
+    .day,
+	.rate-type {
         flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 40px;
     }
+
+	#rates {
+      padding: 0;
+	}
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 /* PRE-EXISTING CSS */
 
@@ -519,6 +589,11 @@ a:hover{
 header{
 	padding:10px 0 0 0;
     margin: 0;
+
+display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 #banner{
 	text-align:center;
@@ -544,12 +619,6 @@ hgroup h2{
 	}
 
 
-p{
-	margin:10px 0 10px 0;
-	/* color: #1cc0dc; */
-}
-
-
 /*colors and backgrounds*/
 body{
 	background:#FFF;
@@ -573,8 +642,10 @@ a.bluelink{
 a.bluelink:hover{
 	background:#ec4399;
 }
+.sf-menu li a {
+	color:red;
 
-
+}
 
 /*
 PRINT STYLESHEET
