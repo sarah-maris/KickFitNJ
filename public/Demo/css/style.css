@@ -1,22 +1,40 @@
-/* BASIC SET UP */
-
-
+/* BASICS */
 body{
+	background: #fff;
 	color:#555;
-	font-family:'Ubuntu', Arial, Helvetica, sans-serif;
-	font-size:1em;
-	line-height:1.4em;
-	font-weight:normal;
+	font: normal 1em/1.4em 'Ubuntu', Arial, Helvetica, sans-serif;
 }
+
 h1, h2, h3, h4, h5, h6{
-	font-weight: normal;
-	font-family:'Ubuntu', Arial, Helvetica, sans-serif;
-	line-height:120%;
 	margin: 0;
 	padding:0;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a,
+a:visited {
+	color:#1cc0dc;
+	text-decoration:none;
+}
+
+a:active,
+a:hover {
+	color: #999;
+	text-decoration: underline;
+}
+
 /* HEADER */
+header{
+	padding: 0;
+    margin: 20px 0 10px 0;
+}
+
+
 #logo {
    width: 275px;
     display: block;
@@ -42,10 +60,6 @@ h1, h2, h3, h4, h5, h6{
 #topnav {
     width: 85%;
     float: right;
-}
-
-.sf-menu a {
-  /*  width: 85px; */
 }
 
 #menu-main-navigation{
@@ -87,24 +101,29 @@ h1, h2, h3, h4, h5, h6{
     -webkit-box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
     box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
 }
+
 ul.sf-menu li:hover li ul,
 ul.sf-menu li.sfHover li ul {
     top:            -999em;
 }
+
 ul.sf-menu li li:hover ul,
 ul.sf-menu li li.sfHover ul {
     left:           12em; /* match ul width */
     top:            0;
 }
+
 ul.sf-menu li li:hover li ul,
 ul.sf-menu li li.sfHover li ul {
     top:            -999em;
 }
+
 ul.sf-menu li li li:hover ul,
 ul.sf-menu li li li.sfHover ul {
     left:           10em; /* match ul width */
     top:            0;
 }
+
 #topnav {
 	width:75%;
 	margin: 35px 0 0 0;
@@ -369,7 +388,6 @@ ul.sf-menu li li li.sfHover ul {
 /* FOOTER */
 
 footer{
-
 	text-align:center;
 	background: #ec4399;
     color: #fff;
@@ -383,32 +401,14 @@ footer ul{
 	padding:0;
 }
 
-footer {
-
-
+#address-block{
+	margin: 10px auto;
+	padding:0;
 }
-
-
-footer a,
-footer a:visited {
-	color:#1cc0dc;
-	text-decoration:none;
-}
-
 
 footer a:active,
 footer a:hover {
 	color: #fff;
-	text-decoration: underline;
-}
-
-footer h1, footer h2, footer h3, footer h4{
-	color:#CCC;
-	margin-bottom:10px;
-}
-
-footer ul{
-	margin:0 0 0 8%;
 }
 
 
@@ -556,114 +556,6 @@ footer ul{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/* PRE-EXISTING CSS */
-
-/* links */
-a,
-a:visited,
-a:active,
-a:hover{
-	color:#999;
-	text-decoration:none;
-}
-/* Contain floats: h5bp.com/q */
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
-
-/* structure */
-.wrapper, #colophon{
-	margin: 10px auto;
-	padding:0;
-}
-header{
-	padding:10px 0 0 0;
-    margin: 0;
-
-display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-#banner{
-	text-align:center;
-}
-
-#hero{
-	background:#e0ffff;
-	border-top:1px solid #e2e2e2;
-	border-bottom:1px solid #e2e2e2;
-	padding:40px 0 40px 0;
-	color:#000;
-
-}
-hgroup h1{
-	font-size:2em;
-	margin-top:0px;
-	color:#1cc0dc;
-	}
-hgroup h2{
-	font-size:1.4em;
-	margin-top:0px;
-	color:#1cc0dc;
-	}
-
-
-/*colors and backgrounds*/
-body{
-	background:#FFF;
-}
-h1, h2, h3, h4, h5, h6{
-
-}
-
-
-
-a.bluelink{
-	background:#1cc0dc;
-	border-radius:7px;
-	color:#fff;
-	display:block;
-	float:left;
-	margin:10px 15px 10px 0;
-	padding:10px;
-	text-decoration:none;
-}
-a.bluelink:hover{
-	background:#ec4399;
-}
-.sf-menu li a {
-	color:red;
-
-}
-
-/*
-PRINT STYLESHEET
-*/
-@media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
-  a, a:visited { text-decoration: underline; }
-  a[href]:after { content: " (" attr(href) ")"; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
-  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
-  thead { display: table-header-group; } /* h5bp.com/t */
-  tr, img { page-break-inside: avoid; }
-  img { max-width: 100% !important; }
-  @page { margin: 0.5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
-}
 
 
 
