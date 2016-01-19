@@ -78,117 +78,54 @@ header{
 }
 
 #topnav {
-    width: 85%;
     float: right;
+   	margin: 35px 0 0 0;
+	width:75%;
 }
 
 #menu-main-navigation{
     display:block;
 }
 
-.sf-menu, .sf-menu * {
-    margin:         0;
-    padding:        0;
-    list-style: none;
-}
-.sf-menu ul {
-    position: absolute;
-    top:  -999em;
-    width: 12em; /* left offset of submenus need to match (see below) */
-}
-.sf-menu ul li {
-    width: 100%;
-    font-size:.85em;
-    line-height:1.1em;
-    font-weight:normal;
-}
-.sf-menu li:hover {
-    visibility: inherit; /* fixes IE7 'sticky bug' */
-}
-.sf-menu li {
-    float: left;
-    position: relative;
-}
-.sf-menu a {
-    display: block;
-    position: relative;
-}
-.sf-menu li:hover ul,
-.sf-menu li.sfHover ul {
-    left:           0;
-    top:            45px; /* match top ul list item height */
-    z-index:        99;
-    -webkit-box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
-    box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
-}
-
-ul.sf-menu li:hover li ul,
-ul.sf-menu li.sfHover li ul {
-    top:            -999em;
-}
-
-ul.sf-menu li li:hover ul,
-ul.sf-menu li li.sfHover ul {
-    left:           12em; /* match ul width */
-    top:            0;
-}
-
-ul.sf-menu li li:hover li ul,
-ul.sf-menu li li.sfHover li ul {
-    top:            -999em;
-}
-
-ul.sf-menu li li li:hover ul,
-ul.sf-menu li li li.sfHover ul {
-    left:           10em; /* match ul width */
-    top:            0;
-}
-
-#topnav {
-	width:75%;
-	margin: 35px 0 0 0;
-}
-
-.sf-menu {
+.menu {
     float:right;
     margin: 30px 0 0 0;
 }
-.sf-menu a {
-    text-decoration:none;
-}
-.sf-menu li a {
-    margin:0;
-    padding:10px 15px;
-}
 
-.sf-menu li{
-    background:#fff;
+.menu li:hover {
+    visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+.menu li {
+	background:#fff;
+    float: left;
+    list-style: none;
     margin:0;
+    padding: 0;
+    position: relative;
 	text-align: center;
 }
-.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+
+.menu li a {
+    margin:0;
+    padding:10px 15px;
+   	display: block;
+    position: relative;
+    text-decoration:none;
+}
+
+.menu a,
+.menu a:visited  {
     color: #ec4399;
 }
 
-
-.sf-menu li li a {
-        border-top: 1px solid #fff;
-        background: #e8e8e8;
-        padding-left:20px;
-}
-.sf-menu li li li a{
-    padding-left:20px;
-    background: #e8e8e8;
-}
-.sf-menu li:hover, .sf-menu li.sfHover,
-.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+.menu li:hover,
+.menu li.sfHover,
+.menu a:focus,
+.menu a:hover,
+.menu a:active {
     background:#ec4399;
     outline: 0;
     color:#fff;
-}
-.sf-menu li:hover > a{
-    color:#fff;
-    background:#ec4399;
 }
 
 /* SERVICE BOXES */
@@ -487,7 +424,7 @@ footer a:hover {
 		margin: 160px 0 0 0
 	}
 
-	.sf-menu a, .sf-menu a:visited {
+	.menu a, .menu a:visited {
 		background-color: #e8e8e8;
 		border-bottom: 1px solid #fff;
 }
@@ -509,7 +446,7 @@ footer a:hover {
     width: 100%;
   }
 
-  .sf-menu {
+  .menu {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -578,10 +515,4 @@ footer a:hover {
       padding: 0;
 	}
 
-
 }
-
-
-
-
-
