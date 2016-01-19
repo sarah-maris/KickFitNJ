@@ -15,8 +15,8 @@
 	}
 
 	button.onclick = function() {
-		if ( -1 == menu.className.indexOf( 'sf-menu' ) )
-			menu.className = 'sf-menu';
+		if ( -1 == menu.className.indexOf( 'menu' ) )
+			menu.className = 'menu';
 
 		if ( -1 != button.className.indexOf( 'toggled-on' ) ) {
 			button.className = button.className.replace( ' toggled-on', '' );
@@ -95,8 +95,17 @@ $(document).ready(function() {
 	});
 
 	//Add click event to close menu when item is clicked in hamburger mode
-	$( ".sf-menu li" ).click(function() {
+	$( ".menu li" ).click(function() {
 		drawer.classList.remove('open');
 	});
+
+
+	//
+	 $('#logo').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
 
 });

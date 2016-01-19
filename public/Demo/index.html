@@ -14,14 +14,14 @@
 	</head>
 <body>
 		<!-- Load Facebook SDK for JavaScript -->
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=546515132050401";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=546515132050401";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 
 	<!-- header area -->
     <header class="header wrapper group">
@@ -35,21 +35,21 @@
             </a>
 
         <nav id="topnav" role="navigation" class="closed">
-                <ul class="sf-menu" id="menu-main-navigation">
+                <ul class="menu" id="menu-main-navigation">
                     <li>
-                        <a href="#philosophy">Philosophy</a>
+                        <a href="#goto-philosophy">Philosophy</a>
                     </li>
                     <li>
-                        <a href="#schedule">Schedule</a>
+                        <a href="#goto-schedule">Schedule</a>
                     </li>
                     <li>
-                        <a href="classdescriptions.html">Classes</a>
+                        <a href="#goto-classdescriptions">Classes</a>
                     </li>
                     <li>
-                        <a href="instructors.html">Instructors</a>
+                        <a href="#goto-instructors">Instructors</a>
                     </li>
                     <li>
-                        <a href="#rates">Rates</a>
+                        <a href="#goto-rates">Rates</a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/Kickfit-170697759786007/" target="_blank">News</a>
@@ -64,12 +64,12 @@
 			<img src="images/side-plank.jpg" width="100%" alt="KickFit logo">
 		</section>
 	<section id="philosophy">
-
+	<span id="goto-philosophy" class="jump-helper"> &nbsp; </span>
 		<div id="group">
 			<img class="service" src="images/Square-group2.jpg" alt"Dawn Mazzeo, Personal Trainer">
 			<h4>Pilates-Infused Group Fitness</h4>
 			<p>At Kickfit we believe that a strong core is the basis of good health and fitness so all of our classes include elements of Pilates fitness.  Our certified Fitness Instructors monitor each student’s performance and offer individualized modifications and challenges to promote continued growth.</p>
-			<p>We also believe that fitness should addictive.  We get there by making fitness fun. Our friendly community includes women of all ages and all fitness levels who enjoy getting fit together.  Come join us!</p>
+			<p>We also believe that fitness should addictive.  We get there by making fitness fun. Our friendly community includes women of all ages, all shapes and all fitness levels who enjoy getting fit together.  Come join us!</p>
 		</div>
 		<div id="other">
 			<img class="calm" src="images/keep-calm-square.jpg" alt"Keep Calm and Workout at KickFit">
@@ -82,7 +82,8 @@
 		</div>
 
 	</section>
-     <section id="schedule" class="group">
+    <section id="schedule" class="group">
+	<span id="goto-schedule" class="jump-helper"> &nbsp; </span>
      <div class="schedule-grid">
 
 		<h1 class="title">Class Schedule</h1>
@@ -147,7 +148,7 @@
 	</section><!-- end #schedule -->
 
 	<section id="rates" class="group">
-
+		<span id="goto-rates" class="jump-helper"> &nbsp; </span>
 		<div class="rate-grid">
 			<h1 class="title">Rates</h1>
 			<div class="rate-boxes">
@@ -176,7 +177,7 @@
 	<section id="social-media" class="group">
   <!-- Your Facebook Like button code -->
      <div id="socmed-bottom">
-<div class="fb-like" data-href="https://www.facebook.com/Kickfit-170697759786007/" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+		<div class="fb-like" data-href="https://www.facebook.com/Kickfit-170697759786007" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
     </div>
     </section>
 <!-- TODO: #Schedule  -->
