@@ -1,220 +1,263 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-<!--Design by Mazzeo Projects, mazzeoprojects.com
-Special Thanks to Prowebdesign, prowebdesign.ro, tinyfluidgrid.com, woothemes.com/flexslider -->
+<html lang="en">
+    <head>
+		<title>KickFit | Pilates Infused Fitness</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Kick Fit is Monmouth County's Premier Boutique Gym, featuring Pilates-infused Group fitness classes and Personal Training.  All fitness levels welcome!">
+		<meta name="keywords" content="pilates, personal training, fitness, fair haven, individualized, friendly, healthy, lifestyle, welcoming, cardio, weight training, performance, challenge, goal-oriented" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- CSS-->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet'>
+		<link href="css/style.css" rel="stylesheet" >
+		<!-- end CSS-->
+	</head>
+<body>
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=546515132050401";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-<title>KickFit | Fitness Classes | Great Workouts</title>
-<meta name="description" content="Kick Fit. Monmouth County's Premier Boutique Gym, featuring classes in Pilates, Piloxing, Vinyasa Yoga, Barre, Total Body Conditioning, Zumba, and more.">
-<meta name="keywords" content="">
-
-<link rel="image_src" href="images/logoFALL.png" />
-
-<!-- Mobile viewport -->
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
-
-<!-- Favicon -->
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-<!-- CSS-->
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
-
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="js/flexslider/flexslider.css" />
-<link rel="stylesheet" href="css/style.css">
-
-<!--[if lt IE 9]>
-<link rel='stylesheet' id='bones-ie-only-css'  href='css/ie.css' type='text/css' media='all' />
-<![endif]-->
-
-<!-- end CSS-->
-    
-<!-- JS-->
-<script src="js/libs/modernizr-2.6.2.min.js"></script>
-<!-- end JS-->
-
-
-<!-- columns demo style. DELETE IT! -->
-<style type="text/css">
-<!--
-
--->
-</style>
-</head>
-
-<body onLoad="setTimeout(function() {window.scrollTo(0, 1)}, 100)" id="home">
-<!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
-  
-<!-- header area -->
-    <header class="wrapper clearfix">
-		       
-        <div id="banner">        
-        	<div id="logo"><img src="images/logoSpring.png" width="289" height="150" alt="logo">
-           </div>
+	<!-- header area -->
+    <header class="header wrapper group">
+        <div id="logo">
+            <img src="images/kickfit-header-logo.png" style="width:100%" alt="KickFit logo">
         </div>
-        
-                  
-           <div id="socmed" class="icons">
-        <table width="150" border="0" cellspacing="1" cellpadding="6px 0px 0px 10px">
-   <tr>
-    <td><a href="https://twitter.com/KickFitNJ/" target="_blank"><img src="images/icons/24px/twitter-2.png"  alt="Twitter" /></a></td>
-    <td><a href="http://kickfitnj.tumblr.com/" target="_blank"><img src="images/icons/24px/tumblr.png" alt="Tumblr" /></a></td>
-    <td><a href="https://www.facebook.com/pages/Kickfit/170697759786007/" target="_blank"><img src="images/icons/24px/facebook.png" /></a></td>
-  </tr>
-</table>
-</div>
-                     
+                <a id="m-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                </svg>
+            </a>
 
-        
-        <nav id="topnav" role="navigation">
-        <h5 class="menu-toggle">Menu</h5>  
-        	<ul class="sf-menu" id="menu-main-navigation">
-            <li>
-            	<a href="mission.html">Mission</a>
-			</li>
-			<li>
-            	<a href="schedule.html">Schedule</a>
-			</li>
-			<li>
-            	<a href="classdescriptions.html">Classes</a>
-			</li>
-			<li>
-				<a href="instructors.html">Instructors</a>
-			</li>
-            <li>
-            	<a href="news.html">News</a>
-			</li>
-			<li>
-            	<a href="rates.html">Rates</a>
-			</li>
-            <li>
-				<a href="mailto:kickfitnj@gmail.com">Contact</a>
-			</li>
-            <li>
-            	<a href="http://kickdancestudios.com/">Kids Dance</a>
-			</li>
-		</ul>     
-		</nav><!-- #access -->
-  
+        <nav id="topnav" role="navigation" class="closed">
+                <ul class="menu" id="menu-main-navigation">
+                    <li>
+                        <a href="#goto-philosophy">Philosophy</a>
+                    </li>
+                    <li>
+                        <a href="#goto-schedule">Schedule</a>
+                    </li>
+                    <li>
+                        <a href="#goto-classdescriptions">Classes</a>
+                    </li>
+                    <li>
+                        <a href="#goto-instructors">Instructors</a>
+                    </li>
+                    <li>
+                        <a href="#goto-rates">Rates</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/Kickfit-170697759786007/" target="_blank">News</a>
+                    </li>
+            </ul>
+
+		</nav>
+
     </header><!-- end header -->
- 
- 
-<section id="hero" class="clearfix">    
-<!-- responsive FlexSlider image slideshow -->
-<div class="wrapper">
-	<div class="grid_5 alpha">
-    	<hgroup>
-			<!--
-            <h1>Get Fit for 
-			<br>
-            the Holidays!   <br>
-            </h1>
-              <h2>&nbsp;</h2>
-			<h1>What's your fitness <br>resolution for 2015?<br><em>We can help!</em></h1><br>
-			<h1>Summer!<br>Time to get Beach Worthy</h1><br>    -->
-			<h1>Kickfit is back!</h1><br>
+    <main>
+		<section id="main-image">
+			<img src="images/side-plank.jpg" width="100%" alt="KickFit logo">
+		</section>
+	<section id="philosophy">
+	<span id="goto-philosophy" class="jump-helper"> &nbsp; </span>
+		<div id="group">
+			<img class="service" src="images/Square-group2.jpg" alt"Dawn Mazzeo, Personal Trainer">
+			<h4>Pilates-Infused Group Fitness</h4>
+			<p>At Kickfit we believe that a strong core is the basis of good health and fitness so all of our classes include elements of Pilates fitness.  Our certified Fitness Instructors monitor each student’s performance and offer individualized modifications and challenges to promote continued growth.</p>
+			<p>We also believe that fitness should be addictive.  We get there by making fitness fun. Our friendly community includes women of all ages, all shapes and all fitness levels who enjoy getting fit together.  Come join us!</p>
+		</div>
+		<div id="other">
+			<img class="calm" src="images/keep-calm-square.jpg" alt"Keep Calm and Workout at KickFit">
+		</div>
+		<div id="personal">
+			<img class="service" src="images/square-sitting.jpg" alt"Dawn Mazzeo, Personal Trainer">
+			<h4>Goal-Oriented Personal Training </h4>
+			<p>Whether you are a mom-to-be focused on staying fit through your pregnancy, a new mom trying to get your old body back, an exercise newbie who needs a little help easing in, or an experience fitness buff who needs a new challenge, we’re here to help.</p>
+			<p>We pride ourselves in putting the "personal" back into personal training. We will listen carefully to your fitness goals and design an individualized training plan to help you meet your goals -- and set new ones!.</p>
+		</div>
 
-		</hgroup> 
-		
-		<div>
-			<p>Details about rates and schedule will be available soon.<br>Stay tuned!</p>
-		   <!-- <p><strong>Kickfit is your neighborhood gym conveniently located near ALL Fair Haven and Rumson schools</strong></p> -->
-		   </div>
-		
-		
-        <p>
-        Kick Fit<br>
-		611 River Road<br>
-        Fair Haven, NJ 07704<br>
-        732.379.8514        </p>
-          
-      <!--     <p><a href="rates.html" class="bluelink">RATES & SPECIALS</a></p> -->
+	</section>
+    <section id="schedule" class="group">
+	<span id="goto-schedule" class="jump-helper"> &nbsp; </span>
+     <div class="schedule-grid">
 
-</div>
-    <div class="flexslider">
-	    <ul class="slides">
-            <li>
-	    		<img src="images/keep-calm-banner.jpg" />
-	    		<p class="flex-caption">KickFit classes will help you strengthen your body and give you the extra energy you need to manage the stress in your life.  
-				Our supportive and non-competitive atmosphere will help you focus on your workout and make it what YOU need it to be.</p>
-			</li>
-			<li>
-				<img src="images/newpiloxinglogo.png" />
-                <p class="flex-caption">PILOXING uniquely blends the
-power, speed and agility of boxing with the beautiful sculpting and flexibility
-of Pilates. It is a fat torching, muscle sculpting, core-centric interval workout,
-guaranteed to whip you into shape.</p>
-	    	</li>
-			<li>
-	    		<img src="images/teaser.png" />
-	    		<p class="flex-caption">.</p>
-	    	</li>
-            <li>
-	    		<img src="images/peakpilateslogo.png" />
-	    		<p class="flex-caption">This classical Pilates mat class emphasizes learning the basic Pilates exercises. Emphasis is placed on pelvic and spinal alignment and the proper use of the breath. Benefits include increased core strength, flexibility and posture.</p>
-	    	</li>
-			<li>
-	    		<img src="images/side-plank.png" />
-	    		<p class="flex-caption">.</p>
-	    	</li>
-            <li>
-	    		<img src="images/bootyBarre.png" />
-	    		<p class="flex-caption">.</p>
-	    	</li>
-			<li>
-	    		<img src="images/Studio.png" />
-	    		<p class="flex-caption">Visit our beautiful studio at 611 River Road in Fair Haven! <br> We're close to all Fair Haven and Rumson schools </p>
-	    	</li>
-	    </ul>
-	  </div>
-      
-</div>
-<!-- FlexSlider -->
-</section>
+		<h1 class="title">Class Schedule</h1>
+
+		<div class="class-list">
+
+			<div class="day mon">
+				<h3 class="day-name">Monday</h3>
+				<div class="strength fit-class mon eight">
+					<h4 class="start-time">8:35 AM</h4>
+					<p class="class-name">Total Body Conditioning</p>
+					<p class="instructor">Sharon</p>
+				</div>
+			</div>
+
+			<div class="day tues">
+				<h3 class="day-name">Tuesday</h3>
+				<div class="cardio fit-class tues eight">
+					<h4 class="start-time">8:35 AM</h4>
+					<p class="class-name">Mix it Up!</p>
+					<p class="instructor">Dawn</p>
+				</div>
+			</div>
+
+			<div class="day weds">
+				<h3 class="day-name ">Wednesday</h3>
+				<div class="strength fit-class weds eight">
+					<h4 class="start-time">8:35 AM</h4>
+					<p class="class-name">Total Body Conditioning</p>
+					<p class="instructor">Dawn</p>
+				</div>
+			</div>
+
+			<div class="day thurs">
+				<h3 class="day-name">Thursday</h3>
+				<div class="pilates fit-class thurs eight">
+					<h4 class="start-time">8:35 AM</h4>
+					<p class="class-name">Pilates</p>
+					<p class="instructor">Dawn</p>
+				</div>
+			</div>
 
 
+			<div class="day fri">
+				<h3 class="day-name">Friday</h3>
+				<div class="strength fit-class fri eight">
+					<h4 class="start-time">8:35 AM</h4>
+					<p class="class-name">Total Body Conditioning</p>
+					<p class="instructor">Dawn</p>
+				</div>
+			</div>
+			<div class="day type">
+				<div class="fit-class">
+					<h3 class="day-name">CLASS TYPE</h3>
+					<p class="class-type strength">Strength</p>
+					<p class="class-type cardio">Cardio</p>
+					<p class="class-type pilates">Core/Flexibility</p>
+				</div>
+			</div>
+		</div><!-- end #class-list -->
+		</div><!-- end #schedule-grid -->
+	</section><!-- end #schedule -->
 
-
-
-<!-- footer area -->    
-<footer>
-	<div id="colophon" class="clearfix">
-    	<div class="grid_12">
-		&copy;2015 Kick Fit, LLC 
-		&bull;&nbsp;611 River Road  
-		&bull;&nbsp;Fair Haven, NJ 07704  
-		&bull;&nbsp;(732)379-8514  
-		&bull;&nbsp;<a href="mailto:kickfitnj@gmail.com">kickfitnj@gmail.com</a>
-	</div>
-		
-</footer>
-
+	<section id="rates" class="group">
+		<span id="goto-rates" class="jump-helper"> &nbsp; </span>
+		<div class="rate-grid">
+			<h1 class="title">Rates</h1>
+			<div class="rate-boxes">
+				<div id="group-rate" class="rate-type">
+					<h3 class="rate-title">Group Fitness</h3>
+					<h4 class="option-title">Unlimited Classes:</h4>
+					<p class="rate-info"> $145 per month<br>
+					<em>minimum 6 month commitment</em></p>
+					<h4 class="option-title">Passbook</h4>
+					<p class="rate-info">10 Classes for $150<br>
+					<em>3 month expiration</em></p>
+					<h4 class="option-title">Single Class</h4>
+					<p class="rate-info"> $20</p>
+				</div>
+				<div id="training"  class="rate-type">
+					<h3 class="rate-title">Personal Training</h3>
+					<h4 class="option-title">Individual: </h4>
+					<p class="rate-info">$ 65 per hour</p>
+					<h4 class="option-title">Small Group:</h4>
+					<p class="rate-info">$ 85 per hour</br>
+					<em>(max 3 people)</em></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="instructors-classes" class="group">
+		<span id="goto-classdescriptions" class="jump-helper"> &nbsp; </span>
+		<div class="class-grid">
+			<h1 class="title">Classes</h1>
+			<div class="class-boxes">
+				<div class="pilates classes">
+					<h3 class="class-title">Pilates</h3>
+					<p class="class-desc">
+						Pilates is a body conditioning routine developed by Joseph Pilates that strengthens the core and creates long, lean muscles. Benefits include flat abdominals, increased circulation, flexibility, and balance, decreased back/neck pain and toned thighs and buttocks. Pilates also promotes weight loss. Although practiced by dancers and gymnasts, many Hollywood actors and exercise enthusiasts practice Pilates to promote their overall health and well being. This classical Pilates mat class emphasizes learning the basic Pilates exercises. Emphasis is placed on pelvic and spinal alignment and the proper use of the breath. Benefits include increased core strength, flexibility and posture.
+					</p>
+				</div><!-- end .pilates -->
+				<div class="strength classes">
+					<h3 class="class-title">Total Body Conditioning</h3>
+					<p class="class-desc">
+						Total Body Conditioning is a one-hour workout that targets all of the major muscle groups.  Our goal is to build long, lean muscles, increase strength, boost endurance and improve balance.  Our small group setting allows our instructors to monitor form and provide individual modifications to keep you challenged at the "just-right" level.
+					</p>
+				</div><!-- end .strength -->
+				<div class="cardio classes">
+					<h3 class="class-title">Mix It Up!</h3>
+					<p class="class-desc">
+						The content and style of Mix It Up varies weekly,  ranging from kickboxing to more traditional moves designed to raise your heart rate. Each class intersperses cardio with a healthy dose of strength  and core training, all focused on the same goal: sculpting lean muscles while working up a sweat!  And like all KickFit classes, our instructors will provide the modifications yto meet your personal needs, whether its kicking it up a notch or dialing down the intensity.
+					</p>
+				</div><!-- end .cardio -->
+			</div><!-- end .class-boxes -->
+		</div><!-- end .class-grid -->
+		<span id="goto-instructors" class="jump-helper"> &nbsp; </span>
+		<div class="instructor-grid">
+			<h1 class="title">Instructors</h1>
+			<div class="instructor-boxes">
+				<img class="thumbnail" src="images/Dawn.jpg" /><h4>Dawn Mazzeo, Director</h4>
+		 	    <p>Dawn is passionate about fitness and empowering  women to be the strongest, most balanced they can be. She has a BA in dance from Sarah Lawrence College and teaches ballet and creative dance at Kick's Dance School.</p>
+		 	    <p>Dawn is certified in Piloxing (Pilates infused boxing), Pilates, SPIN, and Bokwa (dance inspired group fitness).</p>
+				<p>As Director of Kickfit, Dawn focuses on core strength and believes balance and a strong center should be the focal point of a strong fitness program. </p>
+			</div>
+			<div class="instructor-boxes">
+				<img class="thumbnail" src="images/Sharon.jpg" /><h4>Sharon Jacobowitz, Instructor</h4>
+				<p> Sharon is a professional fitness trainer with over 17 years of experience, consistently maintaining all certifications and progressing with the state-of-art techniques in the fitness industry.</p>
+				<p> Sharon's energetic, enthusiastic, caring and motivation techniques help her clients achieve their maximum fitness levels.</p>
+				</div>
+			<div id="social-media" class="group">
+			 	<!-- Your Facebook Like button code -->
+				<div class="fb-like" data-href="https://www.facebook.com/Kickfit-170697759786007" data-width="300" data-layout="standard" data-action="like" data-show-faces="true" data-share="true">
+				</div>
+   			</div><!-- end #social-media -->
+		</div><!-- end  .instructor-grid -->
+	</section><!-- end  .instructors-classes -->
+    </main>
+<!-- TODO: add span to hide the bullets when vertically stacked -->
+    <footer class="lg-screen">
+        <div id="address-block" class="group">
+            <div class="grid_12">
+			&copy; 2013<script>new Date().getFullYear()>2013&&document.write("-"+new Date().getFullYear());</script> Kick Fit LLC
+            &bull;&nbsp;611 River Road
+            &bull;&nbsp;Fair Haven, NJ 07704
+            &bull;&nbsp;(732)379-8514
+            &bull;&nbsp;<a href="mailto:kickfitnj@gmail.com">kickfitnj@gmail.com</a>
+        </div>
+    </footer>
 
 <!-- jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.0.min.js">\x3C/script>')</script>
-		
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+<script src="js/libs/jquery.min.js"></script>
 
-<!-- responsive FlexSlider slideshow by  -->
-<script defer src="js/flexslider/jquery.flexslider-min.js"></script>   
-
-<!-- fire ups - read this file!  -->   
 <script src="js/main.js"></script>
-        
 
-	
+<!-- ADD BACK GOOGLE ANALYTICS -->
+	    <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('#m-toggle');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('nav');
 
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        drawer.classList.toggle('closed');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
 
-<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-15929125-1");pageTracker._trackPageview();} catch(err) {}</script>
+    </script>
+
 </body>
 </html>
